@@ -1,0 +1,43 @@
+.bg-animation {
+  background-image: linear-gradient(to right, #1c83f6, #0f23da);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  animation: background-animation 1s forwards;
+  animation-delay: 1s ;
+}
+
+.animation h2 {
+  color: white;
+  font-size: 64px;
+  animation: text-animation 2s forwards;
+}
+
+@keyframes text-animation {
+    0% {
+        letter-spacing: 0;
+        margin-bottom: 0;
+    }
+    50% {
+        letter-spacing: 20px;
+        margin-bottom: 20px;
+    }
+    100% {
+        letter-spacing: 0;
+        margin-bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes background-animation {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+    }
+}
