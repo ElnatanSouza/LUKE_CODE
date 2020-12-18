@@ -10,11 +10,12 @@ import courseReactRedux from '../../assets/images/courses/react-redux.jpg'
 import coursePHP from '../../assets/images/courses/php.jpg'
 import courseFlutter from '../../assets/images/courses/flutter.jpg'
 import CardCourse from '../../components/CardCourse'
+import CardCategory from '../../components/CardCategory'
 
 const Home = () => {
     return (
         <>
-            <Animation />
+            {/* <Animation /> */}
             <div className="section-1">
                 <div className="container">
                     <header className="header">
@@ -25,6 +26,9 @@ const Home = () => {
                             </button>
                             <button className="btn-2">
                                 INSCREVA-SE
+                            </button>
+                            <button className="btn-menu">
+                                <i className="fas fa-bars"></i>
                             </button>
                         </nav>
                     </header>
@@ -70,17 +74,12 @@ const Home = () => {
                 <div className="container">
                     <h2>O que oferecemos para você</h2>
                     <section className="categories-container">
-
-                        <div className="category-card">
-                            <div className="category-card-image">
-                                {/* <img src="" alt="" /> */}
-                            </div>
-                            <div className="category-card-content">
-                                <h4>BACK-END</h4>
-                                <p>22 Cursos</p>
-                            </div>
-                        </div>
-
+                        <CardCategory title="BACK-END" courses="22 cursos" color="#E31B1B" image="https://cdn3.iconfinder.com/data/icons/web-design-development-shady/48/backend_website-512.png" />
+                        <CardCategory title="BANCO DE DADOS" courses="2 cursos" color="#F5E65A" image="https://img.icons8.com/nolan/2x/database.png" />
+                        <CardCategory title="SEGURANÇA" courses="7 cursos" color="#9C66D1" image="https://getprivacy.com.br/wp-content/uploads/icone-lgpd-fornecedores.png" />
+                        <CardCategory title="MOBILE" courses="9 cursos" color="#2159AB" image="https://icon-library.com/images/mobile-development-icon/mobile-development-icon-23.jpg" />
+                        <CardCategory title="FRONT-END" courses="18 cursos" color="#59FE9B" image="https://cdn4.iconfinder.com/data/icons/technology-83/1000/app_frontend_end_front_front-end_front_end_development-512.png" />
+                        <CardCategory title="CLOUD COMPUTING" courses="11 cursos" color="#E34B1B" image="https://image.flaticon.com/icons/png/512/2900/2900511.png" />
                     </section>
                 </div>
             </div>
