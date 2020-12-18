@@ -15,7 +15,7 @@ import CardCategory from '../../components/CardCategory'
 const Home = () => {
     return (
         <>
-            {/* <Animation /> */}
+            <Animation />
             <div className="section-1">
                 <div className="container">
                     <header className="header">
